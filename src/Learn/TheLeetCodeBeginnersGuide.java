@@ -35,19 +35,19 @@ public class TheLeetCodeBeginnersGuide {
 
         // https://leetcode.com/problems/fizz-buzz/description/
         public List<String> fizzBuzz(int n) {
-            List<String> lista = new ArrayList<>(n);
+            List<String> list = new ArrayList<>(n);
             for (int i = 0; i < n; i++) {
                 if ((i+1) % 3 == 0 && (i+1) % 5 == 0) {
-                    lista.add("FizzBuzz");
+                    list.add("FizzBuzz");
                 }else if ((i+1) % 3 == 0) {
-                    lista.add("Fizz");
+                    list.add("Fizz");
                 }else if ((i+1) % 5 == 0) {
-                    lista.add("Buzz");
+                    list.add("Buzz");
                 }else {
-                    lista.add(Integer.toString(i+1));
+                    list.add(Integer.toString(i+1));
                 }
             }
-            return lista;
+            return list;
         }
 
 
