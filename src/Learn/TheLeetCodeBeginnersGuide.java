@@ -1,5 +1,8 @@
 package Learn;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TheLeetCodeBeginnersGuide {
 
     // https://leetcode.com/problems/running-sum-of-1d-array/description/
@@ -29,5 +32,23 @@ public class TheLeetCodeBeginnersGuide {
         }
         return maximumWealth;
     }
+
+        // https://leetcode.com/problems/fizz-buzz/description/
+        public List<String> fizzBuzz(int n) {
+            List<String> lista = new ArrayList<>(n);
+            for (int i = 0; i < n; i++) {
+                if ((i+1) % 3 == 0 && (i+1) % 5 == 0) {
+                    lista.add("FizzBuzz");
+                }else if ((i+1) % 3 == 0) {
+                    lista.add("Fizz");
+                }else if ((i+1) % 5 == 0) {
+                    lista.add("Buzz");
+                }else {
+                    lista.add(Integer.toString(i+1));
+                }
+            }
+            return lista;
+        }
+
 
 }

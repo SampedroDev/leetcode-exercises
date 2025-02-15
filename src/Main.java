@@ -15,5 +15,8 @@ public class Main {
         int[][] accounts = {{1,2,3},{5,5,5}};
         System.out.println(theLeetCodeBeginnersGuide.maximumWealth(accounts));
 
+        // Exercise 412. Fizz Buzz
+        System.out.println(theLeetCodeBeginnersGuide.fizzBuzz(15));
+
     }
 }
