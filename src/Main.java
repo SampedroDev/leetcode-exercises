@@ -18,5 +18,8 @@ public class Main {
         // Exercise 412. Fizz Buzz
         System.out.println(theLeetCodeBeginnersGuide.fizzBuzz(15));
 
+        // Exercise 1342. Number of Steps to Reduce a Number to Zero
+        System.out.println(theLeetCodeBeginnersGuide.numberOfSteps(14));
+
     }
 }
