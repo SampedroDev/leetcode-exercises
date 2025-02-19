@@ -66,4 +66,45 @@ public class TheLeetCodeBeginnersGuide {
         return steps;
     }
 
+    // https://leetcode.com/problems/middle-of-the-linked-list/description/
+    public ListNode createListNode(int n){
+        if (n <= 0) return null;
+        ListNode head = new ListNode(1);
+        ListNode current = head;
+        for (int i = 2; i <= n; i++) {
+            current.next = new ListNode(i);
+            current = current.next;
+        }
+        return head;
+    }
+    public void printListNode(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val + " -> ");
+            head = head.next;
+        }
+        System.out.println("null");
+    }
+    public ListNode middleNode(ListNode head) {
+        int count = 0;
+        ListNode temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        count = count/2;
+        for (int i = 0; i < count; i++) {
+            head = head.next;
+        }
+        return head;
+    }
+
+}
+
+// Definition for singly-linked list. (Exercise 876)
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
